@@ -1,5 +1,6 @@
 package com.asprogramming.saving_squid;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
@@ -9,7 +10,7 @@ import android.widget.Button;
 
 import static android.view.View.VISIBLE;
 
-public class Kid_Login extends AppCompatActivity {
+public class Kid_Login extends Activity {
 
     private Button login_kids_button;
 
@@ -25,7 +26,11 @@ public class Kid_Login extends AppCompatActivity {
         login_kids_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), Kids_Menu.class));
+
+                if(MainActivity.job_accepted)
+                    startActivity(new Intent(getApplicationContext(), Item_Accpected.class));
+                else
+                    startActivity(new Intent(getApplicationContext(), Kids_Item_Request.class));
             }
         });
 

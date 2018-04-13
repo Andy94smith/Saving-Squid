@@ -15,6 +15,9 @@ public class MainActivity extends Activity {
     private Button menu_kid_button;
     private Button menu_parent_button;
 
+    static boolean request_job = false;
+    static boolean job_accepted = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -1,5 +1,6 @@
 package com.asprogramming.saving_squid;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
@@ -9,7 +10,7 @@ import android.widget.Button;
 
 import static android.view.View.VISIBLE;
 
-public class Kids_Menu extends AppCompatActivity {
+public class Kids_Menu extends Activity {
 
     private Button job_list_button;
 

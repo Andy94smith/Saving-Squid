@@ -1,5 +1,6 @@
 package com.asprogramming.saving_squid;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
@@ -9,7 +10,7 @@ import android.widget.Button;
 
 import static android.view.View.VISIBLE;
 
-public class Parent_Menu extends AppCompatActivity {
+public class Parent_Menu extends Activity {
 
 
 

@@ -4,17 +4,17 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.asprogramming.saving_squid.Kid_Login">
+    tools:context="com.asprogramming.saving_squid.Item_Accpected">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/kidslogin"
+        android:background="@drawable/item_accepted"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true">
 
         <Button
-            android:id="@+id/login_kids_button"
+            android:id="@+id/accept_button"
             android:layout_marginBottom="84dp"
             android:layout_height="40dp"
             android:layout_alignParentBottom="true"

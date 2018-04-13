@@ -19,7 +19,13 @@
         <activity android:name=".Parent_Login" />
         <activity android:name=".Kids_Menu" />
         <activity android:name=".Kids_job_list" />
-        <activity android:name=".Parent_Menu"></activity>
+        <activity android:name=".Parent_Menu" />
+        <activity android:name=".Kids_Item_Request" />
+        <activity android:name=".Waiting_On_Parent" />
+        <activity android:name=".Waiting_On_Child" />
+        <activity android:name=".Item_Accept_Or_Reject" />
+        <activity android:name=".Item_Pricing" />
+        <activity android:name=".Item_Accpected"></activity>
     </application>
 
 </manifest>

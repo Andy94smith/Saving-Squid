@@ -4,21 +4,23 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.asprogramming.saving_squid.Kid_Login">
+    tools:context="com.asprogramming.saving_squid.Waiting_On_Parent">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/kidslogin"
+        android:background="@drawable/waiting_on_parent"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"><![CDATA[>
+
+        ]]>
 
         <Button
-            android:id="@+id/login_kids_button"
-            android:layout_marginBottom="84dp"
-            android:layout_height="40dp"
+            android:id="@+id/waiting_on_parent_btn"
+            android:layout_height="100dp"
+            android:layout_width="200dp"
             android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_width="300dp" />
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp" />
     </RelativeLayout>
 </RelativeLayout>
