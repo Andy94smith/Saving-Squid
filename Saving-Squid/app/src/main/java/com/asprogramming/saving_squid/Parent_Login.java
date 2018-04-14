@@ -27,8 +27,10 @@ public class Parent_Login extends Activity {
             @Override
             public void onClick(View view) {
 
-                if(MainActivity.request_job)
+                if(MainActivity.request_job && !MainActivity.all_done)
                     startActivity(new Intent(getApplicationContext(), Item_Accept_Or_Reject.class));
+                else if( MainActivity.all_done)
+                    startActivity(new Intent(getApplicationContext(), Parent_Menu.class));
                 else
                     startActivity(new Intent(getApplicationContext(), Waiting_On_Child.class));
             }

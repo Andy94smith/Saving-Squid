@@ -25,7 +25,9 @@
         <activity android:name=".Waiting_On_Child" />
         <activity android:name=".Item_Accept_Or_Reject" />
         <activity android:name=".Item_Pricing" />
-        <activity android:name=".Item_Accpected"></activity>
+        <activity android:name=".Item_Accpected" />
+        <activity android:name=".Chore_Complete" />
+        <activity android:name=".Chore_Accept_Or_Reject"></activity>
     </application>
 
 </manifest>

@@ -9,22 +9,20 @@ import android.widget.Button;
 
 import static android.view.View.VISIBLE;
 
-public class Item_Pricing extends AppCompatActivity {
+public class Chore_Accept_Or_Reject extends AppCompatActivity {
 
-    private Button price_button;
+    private Button accept_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_item__pricing);
+        setContentView(R.layout.activity_chore_accept_or_reject);
 
-        MainActivity.all_done = true;
+        accept_button = (Button) findViewById(R.id.accept_button);
+        accept_button.setVisibility(VISIBLE);
+        accept_button.setBackgroundColor(Color.TRANSPARENT);
 
-        price_button = (Button) findViewById(R.id.price_button);
-        price_button.setVisibility(VISIBLE);
-        price_button.setBackgroundColor(Color.TRANSPARENT);
-
-        price_button.setOnClickListener(new View.OnClickListener() {
+        accept_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), Parent_Menu.class));

@@ -17,6 +17,7 @@ public class MainActivity extends Activity {
 
     static boolean request_job = false;
     static boolean job_accepted = false;
+    static boolean all_done = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

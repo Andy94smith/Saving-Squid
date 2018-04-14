@@ -27,10 +27,15 @@ public class Kid_Login extends Activity {
             @Override
             public void onClick(View view) {
 
-                if(MainActivity.job_accepted)
+                if(MainActivity.job_accepted && !MainActivity.all_done) {
                     startActivity(new Intent(getApplicationContext(), Item_Accpected.class));
-                else
+                }
+                else if(MainActivity.all_done){
+                    startActivity(new Intent(getApplicationContext(), Kids_Menu.class));
+                }
+                else {
                     startActivity(new Intent(getApplicationContext(), Kids_Item_Request.class));
+                }
             }
         });
 

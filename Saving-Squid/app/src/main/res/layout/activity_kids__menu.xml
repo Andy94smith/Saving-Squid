@@ -10,9 +10,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/kids_menu"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"><![CDATA[>
-
-        ]]>
+        android:layout_alignParentStart="true">
 
         <Button
             android:id="@+id/job_list_button"
@@ -21,5 +19,15 @@
             android:layout_height="50dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/kid_logout_button"
+            android:layout_marginBottom="20dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/job_list_button"
+            android:layout_marginStart="60dp" />
+
     </RelativeLayout>
 </RelativeLayout>

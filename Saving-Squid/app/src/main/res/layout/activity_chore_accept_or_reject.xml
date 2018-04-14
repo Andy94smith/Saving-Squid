@@ -1,31 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.asprogramming.saving_squid.Kids_job_list">
+    tools:context="com.asprogramming.saving_squid.Kid_Login">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/job_list"
+        android:background="@drawable/chore_accept_or_reject"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true">
 
         <Button
-            android:id="@+id/job_list_button"
+            android:id="@+id/accept_button"
+            android:layout_marginBottom="151dp"
+            android:layout_height="40dp"
             android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="106dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
-
-        <Button
-            android:id="@+id/kid_menu__button"
-            android:layout_height="100dp"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
-            android:layout_width="200dp" />
-
+            android:layout_centerHorizontal="true" />
     </RelativeLayout>
 </RelativeLayout>

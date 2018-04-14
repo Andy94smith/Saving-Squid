@@ -13,6 +13,8 @@ import static android.view.View.VISIBLE;
 public class Kids_Menu extends Activity {
 
     private Button job_list_button;
+    private Button kid_logout_button;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,17 @@ public class Kids_Menu extends Activity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), Kids_job_list.class));
+            }
+        });
+
+        kid_logout_button = (Button) findViewById(R.id.kid_logout_button);
+        kid_logout_button.setVisibility(VISIBLE);
+        kid_logout_button.setBackgroundColor(Color.TRANSPARENT);
+
+        kid_logout_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), MainActivity.class));
             }
         });
     }
