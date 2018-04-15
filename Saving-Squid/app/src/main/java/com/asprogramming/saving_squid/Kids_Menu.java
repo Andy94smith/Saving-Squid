@@ -14,6 +14,7 @@ public class Kids_Menu extends Activity {
 
     private Button job_list_button;
     private Button kid_logout_button;
+    private Button ar_button;
 
 
     @Override
@@ -40,6 +41,17 @@ public class Kids_Menu extends Activity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            }
+        });
+
+        ar_button = (Button) findViewById(R.id.ar_button);
+        ar_button.setVisibility(VISIBLE);
+        ar_button.setBackgroundColor(Color.TRANSPARENT);
+
+        ar_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), CameraViewActivity.class));
             }
         });
     }
